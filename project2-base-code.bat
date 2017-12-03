@@ -9,6 +9,6 @@ echo The IP Address on your system is:
 ::echo %count%
 
 :: english windows version
-::for /f %%a in ('ipconfig/all^|find /I /C "DHCP Enabled. . . . . . . . . . . . . : Yes"') do set count=%%a
+::for /f %%a in ('ipconfig/all^|find /I /C "DHCP Enabled. . . . . . . . . . . : Yes"') do set count=%%a
 ::echo %count%
 pause
