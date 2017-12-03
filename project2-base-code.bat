@@ -11,4 +11,7 @@ echo The IP Address on your system is:
 :: english windows version
 ::for /f %%a in ('ipconfig/all^|find /I /C "DHCP Enabled . . . . . . . . . . . . . : YES"') do set count=%%a
 ::echo %count%
+
+:: check whether DHCP is enabled or not
+if %count% GEQ 1 (echo "DHCP is enabled") else (echo "DHCP is disabled")
 pause
